@@ -1,0 +1,79 @@
+age 
+// $birthDate = explode("/", $_POST["dobAnimal"]);
+      // //get age from date or birthdate
+      // $birthDate = $_POST['dobAnimal'];
+      // $_age = floor((time() - strtotime($birthDate)) / 31556926);
+    //   $birthdate = new DateTime(date("Y-m-d",  strtotime(implode('-', array_reverse(explode('/', '2000-01-01'))))));
+    // $today= new DateTime(date("Y-m-d"));     
+    // $age = $birthdate->diff($today)->m;
+    // echo $age;
+
+
+
+
+
+
+
+if ( $screen->parent_base == 'edit' ) {
+   
+}
+<?php
+
+// $homepageEvents = new WP_Query(array(
+//   'posts_per_page' => -1,
+//   'post_type' => 'adoption',
+//   'meta_key' => 'typeOfAnimal',
+
+// ));
+
+// while($homepageEvents->have_posts()) {
+//   $homepageEvents->the_post();
+ $cform = get_post_meta(255 );
+
+
+// echo $cform;
+//  the_title($cform);
+
+$id=$cform['typeOfAnimal'][0];
+echo get_the_title($id);
+
+?>
+
+
+
+
+
+
+
+
+<!-- <?php
+
+
+
+$cars= get_breeds();
+for($i=0;$i<count($cars);$i++){
+
+ ?>
+  <script>  $cars[$i][0].":TITLE: ".$cars[$i][1].", PARENT: ".$cars[$i][2].".<br>";}
+ echo "the end";
+session_start();
+
+
+?>
+<script>
+
+<?php
+ $a=$_SESSION['all_breeds'];
+ var o = new Object();
+// o["one"] = 1;
+// o["two"] = 2;
+// o["three"] = 3;
+// for(var i in o)
+{
+     document.write(i + "=" + o[i] + '<br>');
+}
+
+ ?>
+
+
+    </script> -->
